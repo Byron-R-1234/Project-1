@@ -14,7 +14,14 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
   - _TODO: Enter the playbook file._
 
-
+- https://github.com/Byron-R-1234/Test/blob/main/pentest.txt
+- https://github.com/Byron-R-1234/Test/blob/main/Host.txt
+- https://github.com/Byron-R-1234/Test/blob/main/ansible.cfg.txt
+- https://github.com/Byron-R-1234/Test/blob/main/elk.txt
+- https://github.com/Byron-R-1234/Test/blob/main/filebeat_config.txt
+- https://github.com/Byron-R-1234/Test/blob/main/filebeat_playbook.txt
+- https://github.com/Byron-R-1234/Test/blob/main/metricbeat-config.txt
+- https://github.com/Byron-R-1234/Test/blob/main/filebeat_playbook.txt
 
 This document contains the following details:
 - Description of the Topologu
