@@ -21,7 +21,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 - https://github.com/Byron-R-1234/Test/blob/main/filebeat_config.txt
 - https://github.com/Byron-R-1234/Test/blob/main/filebeat_playbook.txt
 - https://github.com/Byron-R-1234/Test/blob/main/metricbeat-config.txt
-- https://github.com/Byron-R-1234/Test/blob/main/filebeat_playbook.txt
+- https://github.com/Byron-R-1234/Test/blob/main/metricbeat-playbook.txt
 
 This document contains the following details:
 - Description of the Topologu
@@ -320,10 +320,34 @@ output.elasticsearch:
    (Download the Metricbeat to the VM) 
    
    
- Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+ Answer the following questions to fill in the blanks:
+ 
+ 
+- _Which file is the playbook? 
+
+For ansible I used: https://github.com/Byron-R-1234/Test/blob/main/pentest.txt 
+
+For Filebeat I used: https://github.com/Byron-R-1234/Test/blob/main/filebeat_playbook.txt
+
+For Metricbeat I used: https://github.com/Byron-R-1234/Test/blob/main/metricbeat-playbook.txt
+
+- Where do you copy it?_
+
+to: /etc/ansible
+
+
+- Which file do you update to make Ansible run the playbook on a specific machine? 
+
+I edit the host file and add the IP of the specific virtual machine 
+
+
+- How do I specify which machine to install the ELK server on versus which to install Filebeat on?
+
+I have made a specific group in the host fileto separate the vms to instal elk and filebeat making sure each program instal to their respective VM.
+
+- Which URL do you navigate to in order to check that the ELK server is running?
+
+http://52.190.193.242:5601/app/kibana
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
